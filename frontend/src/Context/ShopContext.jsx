@@ -1,11 +1,12 @@
 import React, { createContext, useEffect, useState } from "react";
-import { backend_url } from "../App";
 
 export const ShopContext = createContext(null);
 
 const ShopContextProvider = (props) => {
 
   const [products, setProducts] = useState([]);
+const backend_url = 'http://localhost:4000';
+const currency = '₹';
 
   const getDefaultCart = () => {
     let cart = {};
@@ -97,7 +98,7 @@ const ShopContextProvider = (props) => {
     }
   };
 
-  const contextValue = { products, getTotalCartItems, cartItems, addToCart, removeFromCart, getTotalCartAmount };
+  const contextValue = { products, getTotalCartItems, cartItems, addToCart, removeFromCart, getTotalCartAmount,backend_url,currency };
   return (
     <ShopContext.Provider value={contextValue}>
       {props.children}
