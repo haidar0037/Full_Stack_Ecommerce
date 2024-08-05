@@ -10,7 +10,11 @@ const ShopCategory = (props) => {
   const [allproducts, setAllProducts] = useState([]);
 
   const fetchInfo = () => { 
+<<<<<<< HEAD
     fetch(`${backend_url}/allproducts`) 
+=======
+    fetch('https://e-commerce-backend-jgzq.onrender.com/allproducts') 
+>>>>>>> ef315d46ab76eca90664debcfc581fd01167e36e
             .then((res) => res.json()) 
             .then((data) => setAllProducts(data))
     }

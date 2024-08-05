@@ -12,10 +12,17 @@ const Shop = () => {
   const [newcollection, setNewCollection] = useState([]);
 
   const fetchInfo = () => { 
+<<<<<<< HEAD
     fetch(`${backend_url}/popularinwomen`) 
             .then((res) => res.json()) 
             .then((data) => setPopular(data))
     fetch(`${backend_url}/newcollections`) 
+=======
+    fetch('https://e-commerce-backend-jgzq.onrender.com/popularinwomen') 
+            .then((res) => res.json()) 
+            .then((data) => setPopular(data))
+    fetch('https://e-commerce-backend-jgzq.onrender.com/newcollections') 
+>>>>>>> ef315d46ab76eca90664debcfc581fd01167e36e
             .then((res) => res.json()) 
             .then((data) => setNewCollection(data))
     }

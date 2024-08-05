@@ -13,7 +13,11 @@ const LoginSignup = () => {
 
   const login = async () => {
     let dataObj;
+<<<<<<< HEAD
     await fetch(`${backend_url}/login`, {
+=======
+    await fetch('https://e-commerce-backend-jgzq.onrender.com/login', {
+>>>>>>> ef315d46ab76eca90664debcfc581fd01167e36e
       method: 'POST',
       headers: {
         Accept:'application/form-data',
@@ -36,7 +40,11 @@ const LoginSignup = () => {
 
   const signup = async () => {
     let dataObj;
+<<<<<<< HEAD
     await fetch(`${backend_url}/signup`, {
+=======
+    await fetch('https://e-commerce-backend-jgzq.onrender.com/signup', {
+>>>>>>> ef315d46ab76eca90664debcfc581fd01167e36e
       method: 'POST',
       headers: {
         Accept:'application/form-data',
